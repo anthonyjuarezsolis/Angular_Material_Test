@@ -6,22 +6,22 @@ import { Observable } from 'rxjs';
 
 
 @Injectable()
-export class PostService{
+export class PostService {
 
     constructor(private http: HttpClient) {
 
     }
     public getPost():  Observable<any> {
-        return this.http.get(`${environment.api_url}/posts`)
+        return this.http.get(`${environment.api_url}/posts`);
     }
 
     public addPost(body):  Observable<any> {
-        return this.http.post(`${environment.api_url}/posts`, body)
+        return this.http.post(`${environment.api_url}/posts`, body);
     }
     public byIdPost(id):  Observable<any> {
-        return this.http.get(`${environment.api_url}/posts/${id}`)
+        return this.http.get(`${environment.api_url}/posts/${id}`);
     }
     public removePosts(id):  Observable<any> {
-        return this.http.delete(`${environment.api_url}/posts/${id}`)
+        return this.http.delete(`${environment.api_url}/posts/${id}`);
     }
 }

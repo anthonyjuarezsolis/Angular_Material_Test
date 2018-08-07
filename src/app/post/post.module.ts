@@ -1,17 +1,17 @@
-import { NgModule } from "@angular/core";
-import { PostAddComponent } from "./post-add/post-add.component";
+import { NgModule } from '@angular/core';
+import { PostAddComponent } from './post-add/post-add.component';
 
-@NgModule({ 
-    imports:[
+@NgModule({
+    imports: [
         PostAddComponent
 
     ],
-    exports:[
+    exports: [
         PostAddComponent
     ],
-    providers:[
+    providers: [
 
     ]
 })
 
-export class PostModule{}
+export class PostModule {}
