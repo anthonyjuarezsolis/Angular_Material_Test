@@ -1,0 +1,33 @@
+<form [formGroup]="postAddForm" (submit)="onSubmit()">
+    <div class="example-container">
+    <mat-form-field>
+    <input matInput formControlName="title" placeholder="Titulo">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput formControlName="categories" placeholder="Categoria">
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea matInput formControlName="content" placeholder="Contenido"></textarea>
+    </mat-form-field>
+
+    <button mat-button type="submit">Enviar</button>
+
+    <!-- Dialogo -->
+    
+
+   <!--  Barra de Progreso -->
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </div>
+</form>
+
+
+<p>
+  Form Value: {{ postAddForm.value | json }}
+</p>
+
+
+<p>
+  Form Status: {{ postAddForm.status }}
+</p>
